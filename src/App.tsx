@@ -3,6 +3,7 @@ import AnimatedComponent from './components/animation/Animated'
 import './App.css'
 import Main from './routes/Main'
 import Boards from './routes/Boards'
+import ThemeProvider from './components/ThemeProvider/ThemeProvider.tsx'
 // import MainPage from './MainPage'
 // import Spring from './components/animation/Spring'
 // import AnimeJs from './components/animation/AnimeJs'
@@ -12,7 +13,7 @@ import Boards from './routes/Boards'
 
     export default function App() {
       return (
-      <>
+        <ThemeProvider>
       <Routes>
         <Route path='/' element={<Main />}/>
         <Route path='/boards' element={<Boards />}/>
@@ -20,7 +21,7 @@ import Boards from './routes/Boards'
         {/* <Route path='/spring' element={<Spring />}/>
         <Route path='/anime' element={<AnimeJs />}/> */}
       </Routes>
-      </>
+      </ThemeProvider>
   
   )
 }

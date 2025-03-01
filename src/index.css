@@ -68,3 +68,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+body.light {
+  /* background-color: rgba(var(--background-primary-light), 1); */
+    background-color: rgb(125, 172, 168);
+}
+
+body.dark {
+  /* background-color: rgba(var(--background-primary-dark), 1); */
+    background-color: #414c86;
+}
